@@ -3,8 +3,30 @@ https://reactrouter.com/en/main/start/tutorial (tutorial)
 
 
 ## Adding a router
-  
- ![[Pasted image 20240712101652.png]]
+```jsx
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+
+```
+
 
 what to add
 ```jsx
@@ -76,10 +98,23 @@ const router = createBrowserRouter([
 
  We need to tell the root route _where_ we want it to render its child routes. We do that with [[Outlet]](https://reactrouter.com/en/main/components/outlet)
  
- ``
- 
 
+## [[Client side routing]] 
 
+ when we click the links in the sidebar, the browser is doing a full document request for the next URL instead of using React Router.
 
+Client side routing allows our app to update the URL without requesting another document from the server. Instead, the app can immediately render new UI. Let's make it happen with [`<Link>`](https://reactrouter.com/en/main/components/link) [[Link]].
 
+## unstable_viewTransition
 
+>[!info] 
+The **View Transitions API** provides a mechanism for easily creating animated transitions between different website views. This includes animating between DOM states in a single-page app (SPA), and animating the navigation between documents in a multi-page app (MPA).
+
+The `unstable_viewTransition` prop enables a [View Transition](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API) for this navigation by wrapping the final state update in `document.startViewTransition()`:
+
+```jsx
+<Link to={to} unstable_viewTransition>
+  Click me
+</Link>
+```
+If you need to apply specific styles for this view transition, you will also need to leverage the [`unstable_useViewTransitionState()`](https://reactrouter.com/en/main/hooks//use-view-transition-state) hook (or check out the `transitioning` class and `isTransitioning` render prop in [NavLink](https://reactrouter.com/en/main/components/nav-link)):

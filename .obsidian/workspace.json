@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React __Logic__.md",
+                "file": "git.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "82cb649eb59a22ab",
+            "id": "3f956ae9a6eeaec6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git.md",
+                "file": "Link.md",
                 "mode": "source",
                 "source": false
               }
@@ -39,8 +39,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,12 +166,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "82cb649eb59a22ab",
+  "active": "2a31034e1561d970",
   "lastOpenFiles": [
-    "React Router (v6.4+).md",
     "React __Logic__.md",
-    "Outlet.md",
+    "React Router (v6.4+).md",
+    "Client side routing.md",
+    "Link.md",
+    "Pasted image 20240712112604.png.md",
     "7aja.md",
+    "git.md",
+    "Outlet.md",
     "migrating to native from React JS.md",
     "Intro to react __Syntax__.md",
     "nested route.md",
@@ -180,7 +183,6 @@
     "Pasted image 20240712112604.png",
     "Pasted image 20240712101652.png",
     "Untitled",
-    "git.md",
     "Welcome.md"
   ]
 }
