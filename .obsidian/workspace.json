@@ -18,8 +18,29 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "82cb649eb59a22ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8994dcdfb3b369f7",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React __Logic__.md",
+                "file": "git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React __Logic__.md",
+                "file": "git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React __Logic__.md"
+                "file": "git.md"
               }
             }
           }
@@ -146,12 +167,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a31034e1561d970",
+  "active": "82cb649eb59a22ab",
   "lastOpenFiles": [
+    "React Router (v6.4+).md",
+    "React __Logic__.md",
+    "Outlet.md",
+    "7aja.md",
     "migrating to native from React JS.md",
     "Intro to react __Syntax__.md",
-    "React __Logic__.md",
-    "Welcome.md",
-    "Untitled"
+    "nested route.md",
+    "child route.md",
+    "Pasted image 20240712112604.png",
+    "Pasted image 20240712101652.png",
+    "Untitled",
+    "git.md",
+    "Welcome.md"
   ]
 }

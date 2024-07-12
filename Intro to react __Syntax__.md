@@ -1,3 +1,9 @@
+
+## good resources
+https://roadmap.sh/react
+[[React __Logic__]]
+
+
 ## general format
 
 ```tsx
