@@ -184,3 +184,71 @@ const router = createBrowserRouter(
 
 TODO: finish the form part
 
+## Forms and actions 
+
+>[!info] Reference: https://www.youtube.com/watch?v=tvE8B1HBoOQ
+
+#### methods 
+The `method` attribute specifies how to send form-data (the form-data is sent to the page specified in the `action` attribute).
+
+The form-data can be sent as URL variables (with `method="get"`) or as HTTP post transaction (with `method="post"`).
+**Notes on GET:**
+
+- Appends form-data into the URL in name/value pairs
+- The length of a URL is limited (about 3000 characters)
+- Never use GET to send sensitive data! (will be visible in the URL)
+- Useful for form submissions where a user wants to bookmark the result
+- GET is better for non-secure data, like query strings in Google
+
+**Notes on POST:**
+
+- Appends form-data inside the body of the HTTP request (data is not shown in URL)
+- Has no size limitations
+- Form submissions with POST cannot be bookmarked
+
+```jsx
+import { Form, redirect, useActionData } from "react-router-dom"
+
+export default function Contact() {
+  const data = useActionData() 
+
+  return (
+    <div className="contact">
+      <h3>Contact Us</h3>
+      <Form method="post" action="/help/contact">
+        <label>
+          <span>Your email:</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Your message:</span>
+          <textarea name="message" required></textarea>
+        </label>
+        <button>Submit</button>
+
+        {data && data.error && <p>{data.error}</p>}
+      </Form>
+    </div>
+  )
+}
+
+export const contactAction = async ({ request }) => {
+  const data = await request.formData()
+
+  const submission = {
+    email: data.get('email'),
+    message: data.get('message')
+  }
+
+  console.log(submission)
+
+  // send your post request
+
+  if (submission.message.length < 10) {
+    return {error: 'Message must be over 10 chars long.'}
+  }
+
+  // redirect the user
+  return redirect('/')
+}
+```

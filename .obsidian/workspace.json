@@ -18,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3f956ae9a6eeaec6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Component/Link.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8994dcdfb3b369f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Context/Intro__Creating a user context.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Context/Intro__Creating a user context.md",
+                "file": "React Router (v6.4+).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Context/Intro__Creating a user context.md",
+                "file": "React Router (v6.4+).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Context/Intro__Creating a user context.md"
+                "file": "React Router (v6.4+).md"
               }
             }
           }
@@ -171,20 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8994dcdfb3b369f7",
+  "active": "2a31034e1561d970",
   "lastOpenFiles": [
-    "Untitled.md",
+    "React Router (v6.4+).md",
+    "Component/Link.md",
+    "git.md",
     "Context/Intro__Creating a user context.md",
+    "Untitled.md",
     "Context",
     "Hooks/UseNavigate.md",
     "Hooks/useRef.md",
     "Client side routing.md",
     "Hooks",
-    "React Router (v6.4+).md",
     "Component",
     "migrating to native from React JS.md",
-    "git.md",
-    "Component/Link.md",
     "Component/Outlet.md",
     "React __Logic__.md",
     "Intro to react __Syntax__.md",
