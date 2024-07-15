@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "e7e2827618580fb9",
+    "id": "734558322e808af2",
     "type": "split",
     "children": [
       {
-        "id": "f60f2fe15572ea02",
+        "id": "77471c3ea1d34219",
         "type": "tabs",
         "children": [
           {
-            "id": "2a31034e1561d970",
+            "id": "b94b967dca4f3c28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React Router (v6.4+).md",
+                "file": "Component/Link.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "66acdf575702f2f9",
+    "id": "323f7f23618e703e",
     "type": "split",
     "children": [
       {
-        "id": "0a8d45b44297f2c3",
+        "id": "2f02f3e0d98d9620",
         "type": "tabs",
         "children": [
           {
-            "id": "7b0474b94a7671ed",
+            "id": "4acce2935cb0df47",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "5ddc8eb1fac6b108",
+            "id": "ee368a5f0027911c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "e9bc4106f639a5a0",
+            "id": "6a3c920938572a64",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206.5
+    "width": 300
   },
   "right": {
-    "id": "c8e90a7896901b03",
+    "id": "ba0d4e83776fca69",
     "type": "split",
     "children": [
       {
-        "id": "b3f162cf87aba049",
+        "id": "709e9525b0d59e4e",
         "type": "tabs",
         "children": [
           {
-            "id": "1dd14c9f6d43878b",
+            "id": "993a8a982ae06f78",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React Router (v6.4+).md",
+                "file": "Component/Link.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +97,19 @@
             }
           },
           {
-            "id": "12a914840e859e98",
+            "id": "04cf537805109a8c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React Router (v6.4+).md",
+                "file": "Component/Link.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "509ede3e2244f9a8",
+            "id": "8465d22672f20034",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +120,12 @@
             }
           },
           {
-            "id": "f4e1c0e23d95fbaa",
+            "id": "05c1568b16f70dd4",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "React Router (v6.4+).md"
+                "file": "Component/Link.md"
               }
             }
           }
@@ -146,29 +146,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a31034e1561d970",
-  "lastOpenFiles": [
-    "React Router (v6.4+).md",
-    "Component/Link.md",
-    "git.md",
-    "Context/Intro__Creating a user context.md",
-    "Untitled.md",
-    "Context",
-    "Hooks/UseNavigate.md",
-    "Hooks/useRef.md",
-    "Client side routing.md",
-    "Hooks",
-    "Component",
-    "migrating to native from React JS.md",
-    "Component/Outlet.md",
-    "React __Logic__.md",
-    "Intro to react __Syntax__.md",
-    "Pasted image 20240712112604.png.md",
-    "7aja.md",
-    "nested route.md",
-    "child route.md",
-    "Pasted image 20240712112604.png",
-    "Pasted image 20240712101652.png",
-    "Welcome.md"
-  ]
+  "active": "b94b967dca4f3c28",
+  "lastOpenFiles": []
 }
