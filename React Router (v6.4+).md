@@ -118,3 +118,69 @@ The `unstable_viewTransition` prop enables a [View Transition](https://develo
 </Link>
 ```
 If you need to apply specific styles for this view transition, you will also need to leverage the [`unstable_useViewTransitionState()`](https://reactrouter.com/en/main/hooks//use-view-transition-state) hook (or check out the `transitioning` class and `isTransitioning` render prop in [NavLink](https://reactrouter.com/en/main/components/nav-link)):
+
+## Loaders
+https://www.youtube.com/watch?v=K-bxVELldCc&t=62s
+
+only work with new versions of the router that have the **createBorwserRouter**
+- a way we can load stuff into a component before it renders 
+- if  i have a page that loads data from an API --> loaders would allow us to fetch that data into the app before the component renders in the brower --> inside the component we wiont have to use hooks like use effect to fetch the data (no loading into local states as well ) 
+
+creating the loader
+
+this can be in any file because it is exported
+```jsx
+// data loader: loading data from an api
+export const careersLoader = async () => {
+  const res = await fetch('http://localhost:4000/careers')
+
+  return res.json()
+}
+```
+
+the component that uses the data
+```jsx
+import { Link, useLoaderData } from "react-router-dom"
+
+export default function Careers() {
+  const careers = useLoaderData()
+
+  return (
+    <div className="careers">
+      {careers.map(career => (
+        <Link to='/' key={career.id}>
+          <p>{career.title}</p>
+          <p>Based in {career.location}</p>
+        </Link>
+      ))}
+    </div>
+  )
+}
+
+```
+
+the router
+```js
+import Careers, { careersLoader } from './pages/careers/Careers'
+
+//rest of the code 
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+
+      </Route>
+      <Route path="careers" element={<CareersLayout />}>
+        <Route 
+          index 
+          element={<Careers />} 
+          loader={careersLoader} //line to direct the loader  
+        />
+      </Route>
+</Route>
+  )
+)
+```
+
+TODO: finish the form part
+

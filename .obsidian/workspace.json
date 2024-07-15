@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git.md",
+                "file": "React Router (v6.4+).md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Link.md",
+                "file": "Component/Link.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,11 +35,16 @@
             "id": "8994dcdfb3b369f7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Context/Intro__Creating a user context.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -105,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git.md",
+                "file": "Context/Intro__Creating a user context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git.md",
+                "file": "Context/Intro__Creating a user context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git.md"
+                "file": "Context/Intro__Creating a user context.md"
               }
             }
           }
@@ -166,23 +171,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a31034e1561d970",
+  "active": "8994dcdfb3b369f7",
   "lastOpenFiles": [
-    "React __Logic__.md",
-    "React Router (v6.4+).md",
+    "Untitled.md",
+    "Context/Intro__Creating a user context.md",
+    "Context",
+    "Hooks/UseNavigate.md",
+    "Hooks/useRef.md",
     "Client side routing.md",
-    "Link.md",
+    "Hooks",
+    "React Router (v6.4+).md",
+    "Component",
+    "migrating to native from React JS.md",
+    "git.md",
+    "Component/Link.md",
+    "Component/Outlet.md",
+    "React __Logic__.md",
+    "Intro to react __Syntax__.md",
     "Pasted image 20240712112604.png.md",
     "7aja.md",
-    "git.md",
-    "Outlet.md",
-    "migrating to native from React JS.md",
-    "Intro to react __Syntax__.md",
     "nested route.md",
     "child route.md",
     "Pasted image 20240712112604.png",
     "Pasted image 20240712101652.png",
-    "Untitled",
     "Welcome.md"
   ]
 }
