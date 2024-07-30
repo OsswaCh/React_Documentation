@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Component/Link.md",
+                "file": "Hooks/useContext.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "80825ff7d9e4efdb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hooks/useNavigate and Navigate.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Component/Link.md",
+                "file": "Hooks/useNavigate and Navigate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Component/Link.md",
+                "file": "Hooks/useNavigate and Navigate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Component/Link.md"
+                "file": "Hooks/useNavigate and Navigate.md"
               }
             }
           }
@@ -146,6 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b94b967dca4f3c28",
-  "lastOpenFiles": []
+  "active": "80825ff7d9e4efdb",
+  "lastOpenFiles": [
+    "Hooks/useNavigate and Navigate.md",
+    "Component/Link.md",
+    "Hooks/useContext.md"
+  ]
 }
