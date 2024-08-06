@@ -45,6 +45,89 @@ React Native was created as a way for developers to build cross-platform mobile 
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/67edefdb-f5fa-4129-984d-b5c27a8de082/8ff98369-058b-4cb7-a5ad-23914e32b687/Untitled.png)
 
+**Things that are the same or translate over well from React Web to React Native**
+
+- Core React concepts. Component lifecycle, composition, etc.
+    
+- React architectural concepts. State management, orchestrating HTTP requests.
+    
+- Performance optimization techniques that are specific to React.
+    
+- Many tools for monitoring, error reporting, analytics, etc. have SDKs that translate over well (I'm thinking Sentry, Datadog, others).
+
+
+**Things that are different between React Web and React Native:**
+
+- Styling. CSS concepts translate over, but the CSS engine is basic compared to browser support.
+    
+- Library availability. Pure JS libs all translate over (e.g., lodash, axios, etc). CSS-based UI libs don't make sense on mobile; your new options include NativeBase, React Native Elements and others). Some web-based UI libs do have RN siblings though - react-native-material for example, Tailwind. important to our app, Tailwind is not stable on react native, thus we will have to use something like react native styled components
+    
+- Mobile hardware can do things browsers can't, so that's a perk. But also new learning.
+    
+- Navigation. react-navigation is the standard for mobile, which is very different from react-router, Next.js's router, and so on.
+    
+- Development and DX. Some tools are similar (Chrome debugger, mostly), but other things are very different (working with the bundler, Flipper, AsyncStorage debugging, more). Some techniques you use are the same (breakpoints and console logging), but others are different (knowing when to restart the packager vs reinstall the app on device).
+    
+- Releases. You can deploy to prod without restriction on web; on mobile you have to deal with both app stores, which can be cumbersome and slow especially for the initial release/approval process.
+    
+- CI/CD are a different animal.
+    
+- Testing: unit testing with Jest is similar; E2E testing is completely different.
+    
+- Performance optimization: besides React optimization (which is arguably more necessary on mobile), you now have different hardware and a different internal architecture. You have to know about the JS and UI threads, and different (and IMO more challenging) ways to avoid jank and prevent crashing.
+ 
+## why you shouldn't build an app using React JS
+
+
+### 1. **Performance Issues**
+
+- **Web vs. Native**: React.js applications run within a web browser, which adds a layer of abstraction between the app and the device's hardware. This can lead to slower performance compared to native mobile apps, which are compiled directly to native code.
+- **Resource Consumption**: Web apps generally consume more memory and processing power compared to native apps, leading to potential issues on devices with limited resources.
+
+### 2. **User Experience**
+
+- **Look and Feel**: Mobile users expect apps to look and feel like native applications. React.js-based apps often don't match the native UI and UX standards, which can result in a subpar user experience.
+- **Responsive Design Limitations**: While React.js supports responsive design, it can be challenging to achieve the same level of responsiveness and fluidity as native apps, especially for complex interactions and animations.
+
+### 3. **Access to Native Features**
+
+- **Limited API Access**: Web apps have limited access to device hardware and features, such as GPS, camera, sensors, and more. While some of these can be accessed through web APIs, the functionality is often more restricted and less efficient than native APIs.
+- **Offline Functionality**: Native apps can provide better offline support and functionality compared to web apps, which rely heavily on internet connectivity.
+
+### 4. **Development Tools and Ecosystem**
+
+- **React.js vs. React Native**: React Native is specifically designed for building mobile applications using React. It allows developers to write mobile apps that are truly native but still use the same React.js principles. React Native provides components and APIs that map directly to native UI components, ensuring better performance and user experience.
+- **Build Tools**: React.js development relies on tools optimized for web development (e.g., Webpack, Babel), while mobile app development benefits from mobile-specific tools (e.g., Xcode, Android Studio).
+
+### 5. **App Store Policies**
+
+- **Acceptance Issues**: Some app stores may have policies that discourage or limit the use of web-based technologies for mobile apps. Native or near-native technologies (like React Native) are generally more acceptable.
+## Reasons Not to Use React Native for Web Platform Development
+
+1. **Performance Concerns**
+    
+    - **Overhead**: React Native components might add additional overhead compared to components specifically designed for the web. This can lead to performance issues, particularly for complex applications.
+    - **Optimization**: Web-optimized frameworks and libraries (like React DOM) are generally more performant for web-specific use cases.
+2. **Limited Web Features**
+    
+    - **Web-Specific APIs**: React Native for Web might not support all web-specific APIs and features out-of-the-box, leading to potential limitations in accessing certain web functionalities.
+    - **Browser Compatibility**: Ensuring compatibility across different browsers can be more challenging with React Native for Web compared to frameworks specifically designed for web development.
+3. **Maturity and Ecosystem**
+    
+    - **Less Mature**: React Native for Web is relatively new compared to other web frameworks. It might lack some of the robustness and extensive community support found in mature web development tools.
+    - **Ecosystem Gaps**: There may be gaps in the ecosystem, such as fewer third-party libraries and tools specifically designed for React Native for Web.
+4. **Development Workflow**
+    
+    - **Mobile-centric Development**: React Native's development workflow is centered around mobile development. Adapting this workflow for web development might require additional adjustments and tooling.
+    - **Styling and Layout**: While React Native uses a simplified styling approach (similar to CSS but not identical), complex web layouts might be harder to implement compared to using traditional CSS frameworks and methodologies.
+
+### When Might React.js Be Acceptable for Mobile?
+
+There are a few scenarios where building a mobile app with React.js might be acceptable:
+
+- **Progressive Web Apps (PWAs)**: PWAs are web applications that provide a more app-like experience with offline capabilities and can be added to the home screen. PWAs are suitable for simpler applications or when targeting both web and mobile platforms with a single codebase.
+- **Internal Tools**: For internal tools or enterprise applications where performance and native look-and-feel are not critical, using React.js for mobile access might be a viable option.
+
 ## advantages of working with React native
 
 - To avoid separate development, the logic layer can be reused to build the same app for both Android and iOS.
