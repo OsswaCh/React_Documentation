@@ -166,6 +166,8 @@ There are a few scenarios where building a mobile app with React.js might be acc
     
 
 ## App to web
+this article explains how it is done https://blog.logrocket.com/complete-guide-react-native-web/#:~:text=In%20other%20words%2C%20using%20the,apps%20for%20web%20users%20productively.
+
 
 for this we can use [**React Native for Web**](https://necolas.github.io/react-native-web/)
 
@@ -173,7 +175,7 @@ React Native for Web is an accessible implementation of React Native's Component
 
 It can be used in new and existing apps, web-only and multi-platform apps.
 
-### how to add to a reactr native app
+### how to add to a react native app
 
 example for node js: Node.js can alias **`react-native`** to **`react-native-web`** using [**`module-alias`**](https://www.npmjs.com/package/module-alias). This is useful if you want to pre-render the app (e.g., server-side rendering or build-time rendering).
 
