@@ -65,7 +65,8 @@ npm init @capacitor/app
 In the root of your app, install Capacitor's main npm dependencies: the core JavaScript runtime and the command line interface (CLI).
 
 ```
-npm i @capacitor/corenpm i -D @capacitor/cli
+npm i @capacitor/core
+npm i -D @capacitor/cli
 ```
 
 #### Initialize your Capacitor config[​](https://capacitorjs.com/docs/getting-started#initialize-your-capacitor-config "Direct link to Initialize your Capacitor config")
@@ -92,6 +93,11 @@ Install the Ionic CLI with npm:
 npm install -g @ionic/cli
 ```
 
+for this to work u need to add this in powershell 
+
+```
+Get-ExecutionPolicy
+```
 #### Create your Android and iOS projects[​](https://capacitorjs.com/docs/getting-started#create-your-android-and-ios-projects "Direct link to Create your Android and iOS projects")
 
 Back to capacitor
@@ -117,6 +123,13 @@ npx cap sync
 `npx cap sync` will copy your built web bundle expected to be found in `webDir` of the [Capacitor Config](https://capacitorjs.com/docs/config) file to your native project and install the native project's dependencies.
 
 ### Opening the Android Project[​](https://capacitorjs.com/docs/android#opening-the-android-project "Direct link to Opening the Android Project")
+
+make sure to run 
+ 
+```
+ionic build 
+```
+ before running any commands to update the build 
 
 To open the project in Android Studio, run:
 
